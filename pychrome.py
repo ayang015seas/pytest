@@ -1,5 +1,5 @@
 # pychrometest
-import PyChromeDevTools
+from PyChromeDevTools import PyChromeDevTools
 import time
 from geoip import geolite2
 import json

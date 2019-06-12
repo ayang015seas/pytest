@@ -1,7 +1,9 @@
 # pychrometest
-from PyChromeDevTools import PyChromeDevTools
+import sys
+sys.path.insert(0, "/users/ayang015/PyChromeDevTools")
+import PyChromeDevTools
 import time
-from geoip import geolite2
+#from geoip import geolite2
 import json
 
 chrome = PyChromeDevTools.ChromeInterface()

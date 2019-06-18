@@ -28,45 +28,6 @@ var articles =
 var log = [];
 var errorLog = [];
 
-function stoperror() {
-   return true;
-}
-
-function parseFile(fileName) {
-	return new Promise(function(resolve, reject) {
-		var contents = fs.readFileSync(fileName, 'utf8').split('\n');
-		resolve(contents);
-	});
-}
-
-// test function 
-function getDNS(url) {
-  return new Promise(function(resolve, reject) {
-  var disk = dns.lookup(url, function(err, address, family) {
-    // console.log("Address :", address);
-  try {
-    dns.reverse(address,function(err,hostnames) {
-      if (err) {
-        // console.log("not found");
-        resolve(null);
-      }
-      else {
-      // console.log(list);
-      // console.log(hostnames[0]);
-      
-      resolve(hostnames[0]);
-      }
-    });
-  }
-  catch {
-    console.log("DNS error");
-    resolve(null);
-  }
-
-  });
-  });
-}
-
 
 function record(article) {
 	return new Promise(function(resolve, reject) {
@@ -165,4 +126,5 @@ async function runThrough() {
 }
 
 main();
+
 

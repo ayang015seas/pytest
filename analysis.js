@@ -199,6 +199,8 @@ for (var i = 0; i < data.length; i++) {
    parsePage(page);
 }
 
-
-
-
+fs.writeFileSync('results.txt', JSON.stringify(all_pages), (err) => {
+  if(err) {
+    console.log("write_error");
+  }
+});

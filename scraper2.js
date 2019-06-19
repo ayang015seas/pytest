@@ -8,9 +8,6 @@ var articles =
 ["https://www.foxnews.com/us/dallas-shooters-troubling-facebook-posts",
 "https://www.foxnews.com/politics/trump-puts-army-secretary-in-charge-of-pentagon-after-shanahan-drops-out-of-contention-for-secdef",
 "https://www.foxnews.com/politics/trump-launches-campaign-machine-with-massive-war-chest-despite-polling-lag",
-]
-
-/*
 "https://www.foxnews.com/politics/manafort-transferred-to-ny-federal-prison-as-he-awaits-trial-on-state-charges",
 "https://www.infowars.com/medical-ids-enemy-of-privacy-liberty-and-health/",
 "https://www.infowars.com/facebook-internet-of-money-to-control-bill-pay-access-to-public-transportation/",
@@ -30,7 +27,6 @@ var articles =
 "https://www.cnn.com/2019/06/18/politics/fact-check-trump-clinton-emails/index.html",
 "https://en.wikipedia.org/wiki/5G",
 ]
-*/
 
 
 var log = [];
